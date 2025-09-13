@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGO_URI = "mongodb+srv://umrabd:6gEUK7oeUJs8GC22@snacktok.psij0h9.mongodb.net/?retryWrites=true&w=majority&appName=snacktok";
+const MONGO_URI = process.env.MONGO_URI;
 
 function connectDB() {
     mongoose
